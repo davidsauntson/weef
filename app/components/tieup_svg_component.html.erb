@@ -1,0 +1,14 @@
+<svg width="<%= treadles.size * 10 %>" height="<%= shafts.size * 10 %>">
+
+    <%= treadles.each do |treadle| %>
+        <%# draw a black square for each shaft tied to this treadle %>
+        <% treadle.shafts.each do |shaft| %>
+            <rect x="<%= (treadle.id - 1) * 10 %>" y="<%= (shafts.size - shaft.id) * 10 %>" width="10" height="10" fill="black" />
+        <% end %>
+
+        <%# draw the grid for that treadle (order of shafts doesn't matter) %>
+        <% shafts.each do |shaft| %>
+            <rect x="<%= (treadle.id - 1) * 10 %>" y="<%= (shaft.id - 1) * 10 %>" width="10" height="10" stroke="grey" fill="transparent" />
+        <% end %>
+    <% end %>    
+</svg>
