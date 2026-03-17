@@ -1,3 +1,5 @@
 <h1 class="govuk-heading-l"><%= @weave.title %></h1>
 
 <h2 class="govuk-heading-m">Tie up</h2>
+
+<%= render TieupSvgComponent.new(@loom.treadles, @loom.shafts) %>
