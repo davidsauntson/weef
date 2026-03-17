@@ -58,3 +58,5 @@ group :test do
 end
 
 gem "pry", "~> 0.16.0"
+
+gem "cssbundling-rails", "~> 1.4"
