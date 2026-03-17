@@ -1,0 +1,4 @@
+bundle exec rubocop
+bin/brakeman
+bin/bundler-audit
+rails test
