@@ -20,5 +20,11 @@
   },
   "dependencies": {
     "govuk-frontend": "^6.1.0"
+  },
+  "lint-staged": {
+      "*.rb": [
+          "bundle exec rubocop -A"
+      ]
   }
 }
+
