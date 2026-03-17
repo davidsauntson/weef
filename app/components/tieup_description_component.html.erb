@@ -1,0 +1,16 @@
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Tie this treadle #</th>
+      <th scope="col" class="govuk-table__header">To these shafts</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <% treadles.each do |treadle| %>
+        <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><%= treadle.id %></th>
+            <td class="govuk-table__cell"><%= shaft_ids_for_treadle(treadle) %></td>
+        </tr>
+    <% end %>
+  </tbody>
+</table>
