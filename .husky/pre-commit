@@ -1,4 +1,4 @@
-bundle exec rubocop
+npx lint-staged
 bin/brakeman
 bin/bundler-audit
 rails test
