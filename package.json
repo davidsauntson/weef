@@ -16,9 +16,15 @@
   "license": "ISC",
   "devDependencies": {
     "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
     "sass": "^1.98.0"
   },
   "dependencies": {
     "govuk-frontend": "^6.1.0"
+  },
+  "lint-staged": {
+    "*.rb": [
+      "bundle exec rubocop -A"
+    ]
   }
 }
